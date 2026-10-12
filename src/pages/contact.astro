@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { contactEmail } from '../data/site';
+---
+<BaseLayout title="Contact | Lucky Shot Studio" description="Start a project with Lucky Shot Studio.">
+<section class="contact-page"><div class="shell contact-grid"><div class="intro"><div class="caps">Start a project</div><h1>Tell us what you've got in mind.</h1><p>Share the basics of the job, where it is, and what you need. The form is wired as a front-end placeholder in this first build and can be connected to the final form provider at deployment.</p><a href={`mailto:${contactEmail}`}>{contactEmail} ↗</a></div><form class="form" action="#" method="post"><label>Name<input type="text" name="name" autocomplete="name" /></label><label>Email<input type="email" name="email" autocomplete="email" /></label><label>Business / organisation<input type="text" name="business" /></label><label>What do you need?<select name="service"><option>Signs</option><option>Chalkboards</option><option>Digital Services</option><option>Branding / Illustration</option><option>Murals</option><option>Something else</option></select></label><label>Project details<textarea name="message" rows="8"></textarea></label><button class="btn fill" type="submit">Send enquiry →</button></form></div></section>
+</BaseLayout>
+<style>
+  @import './contact.css';
+</style>

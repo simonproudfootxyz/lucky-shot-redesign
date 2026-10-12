@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContactCTA from './ContactCTA.astro';
+import PortfolioImage from './PortfolioImage.astro';
+const { eyebrow, title, intro, images = [], details = [], accent = 'sky' } = Astro.props;
+---
+<BaseLayout title={`${title} | Lucky Shot Studio`} description={intro}>
+  <section class={`service-hero ${accent}`}>
+    <div class="shell service-hero-grid">
+      <div class="service-copy"><div class="caps">{eyebrow}</div><h1>{title}</h1><p>{intro}</p><a class="btn fill" href="/contact/">Start a project →</a></div>
+      {images[0] && <div class="service-feature"><PortfolioImage image={images[0]} loading="eager" fetchpriority="high" /></div>}
+    </div>
+  </section>
+  <section class="section"><div class="shell"><div class="details-grid"><div class="caps">What we do</div><div>{details.map((item) => <div class="detail"><h2>{item.title}</h2><p>{item.text}</p></div>)}</div></div></div></section>
+  <section class="gallery"><div class="shell"><div class="gallery-head"><div class="caps">Selected work</div><p>{images.length} examples from the Lucky Shot archive.</p></div><div class="gallery-grid">{images.map((image, index) => <figure class:list={['gallery-item', `pattern-${index % 7}`]}><PortfolioImage image={image} /></figure>)}</div></div></section>
+  <ContactCTA />
+</BaseLayout>
+<style>
+  @import './ServicePage.css';
+</style>

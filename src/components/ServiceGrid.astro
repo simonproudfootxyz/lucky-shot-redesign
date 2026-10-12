@@ -1,0 +1,16 @@
+---
+import { services } from '../data/site';
+---
+<div class="service-grid">
+{services.map(service => (
+  <a class="service" href={service.href}>
+    <div class="num">{service.num}</div>
+    <h3>{service.title}</h3>
+    <p>{service.description}</p>
+    <div class="go">↗</div>
+  </a>
+))}
+</div>
+<style>
+  @import './ServiceGrid.css';
+</style>

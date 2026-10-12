@@ -1,0 +1,37 @@
+---
+import { navItems, shopUrl } from '../data/site';
+const { currentPath = '/' } = Astro.props;
+---
+<header class="site-header">
+  <div class="shell head">
+    <a class="logo-box" href="/" aria-label="Lucky Shot Studio home"><img src="/logo.svg" alt="Lucky Shot Studio" /></a>
+    <nav class="nav" aria-label="Primary navigation">
+      {navItems.map((item) => <a class:list={[currentPath.startsWith(item.href) && 'active']} href={item.href}>{item.label}</a>)}
+    </nav>
+    <div class="head-actions">
+      <a class="btn shop" href={shopUrl} target="_blank" rel="noreferrer">Shop ↗</a>
+      <a class="btn enquire" href="/contact/">Enquire</a>
+      <button class="menu-button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu" hidden>
+    <nav class="shell" aria-label="Mobile navigation">
+      {navItems.map((item) => <a href={item.href}>{item.label}<span>↗</span></a>)}
+      <a href="/contact/">Contact<span>↗</span></a>
+      <a href={shopUrl} target="_blank" rel="noreferrer">Shop<span>↗</span></a>
+    </nav>
+  </div>
+</header>
+<script>
+  const button = document.querySelector('.menu-button');
+  const menu = document.querySelector('#mobile-menu');
+  button?.addEventListener('click', () => {
+    const open = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!open));
+    if (menu instanceof HTMLElement) menu.hidden = open;
+    document.body.classList.toggle('menu-open', !open);
+  });
+</script>
+<style>
+  @import './Header.css';
+</style>

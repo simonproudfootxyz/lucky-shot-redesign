@@ -1,0 +1,41 @@
+.site-header { background: var(--ink); color: var(--cream); border-bottom: 2px solid var(--ink); position: relative; z-index: 30; }
+.head { display: grid; grid-template-columns: 190px 1fr auto; align-items: center; height: 116px; gap: 35px; }
+.logo-box { height: 86px; display: flex; align-items: center; justify-content: flex-start; padding: 8px 0; }
+.logo-box img { width: 140px; height: 72px; object-fit: contain; }
+.nav { display: flex; gap: 24px; align-items: center; font-size: 12px; font-weight: 800; text-transform: uppercase; }
+.nav a { position: relative; }
+.nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -7px; height: 2px; background: var(--cream); transition: .2s; }
+.nav a:hover::after, .nav a.active::after { right: 0; }
+.head-actions { display: flex; gap: 10px; align-items: center; }
+.head-actions .btn { border-color: var(--cream); color: var(--cream); background: transparent; }
+.head-actions .enquire { background: var(--cream); color: var(--ink); }
+.head-actions .btn:hover { background: white; color: var(--ink); border-color: white; }
+.menu-button { display: none; width: 46px; height: 46px; border: 2px solid var(--cream); border-radius: 50%; background: transparent; padding: 0 11px; }
+.menu-button span { display: block; height: 2px; background: var(--cream); margin: 6px 0; transition: .2s; }
+.menu-button[aria-expanded="true"] span:first-child { transform: translateY(4px) rotate(45deg); }
+.menu-button[aria-expanded="true"] span:last-child { transform: translateY(-4px) rotate(-45deg); }
+.mobile-menu { background: var(--ink); border-top: 1px solid #444; padding: 8px 0 24px; }
+.mobile-menu nav { display: flex; flex-direction: column; }
+.mobile-menu a { font-family: 'Archivo Black'; font-size: clamp(1.8rem, 8vw, 3.5rem); text-transform: uppercase; display: flex; justify-content: space-between; padding: 13px 0; border-bottom: 1px solid #444; }
+.mobile-menu a span { font-family: 'DM Sans'; font-size: .7em; }
+
+@media (max-width: 1180px) {
+  .head { grid-template-columns: 150px 1fr auto; gap: 20px; }
+  .nav { gap: 14px; font-size: 10px; }
+  .logo-box img { width: 125px; }
+}
+
+@media (max-width: 900px) {
+  .head { grid-template-columns: 1fr auto; height: 94px; }
+  .nav { display: none; }
+  .logo-box { height: 70px; }
+  .logo-box img { width: 112px; height: 64px; }
+  .head-actions .shop { display: none; }
+  .menu-button { display: block; }
+}
+
+@media (max-width: 520px) {
+  .head-actions .enquire { display: none; }
+  .head { height: 86px; }
+  .logo-box img { width: 104px; }
+}

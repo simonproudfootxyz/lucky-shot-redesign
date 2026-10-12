@@ -1,0 +1,16 @@
+footer { background: var(--ink); color: var(--cream); padding: 34px 0; }
+.foot { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.foot img { width: 120px; height: 70px; object-fit: contain; }
+.foot span, .foot a:not(:first-child) { font-size: 11px; text-transform: uppercase; letter-spacing: .09em; }
+
+@media (max-width: 760px) {
+  .foot { display: grid; grid-template-columns: 1fr 1fr; align-items: end; }
+  .foot a:first-child { grid-column: 1 / -1; }
+  .foot img { width: 112px; }
+  .foot > * { padding: 4px 0; }
+}
+
+@media (max-width: 480px) {
+  .foot { grid-template-columns: 1fr; }
+  .foot a:first-child { grid-column: auto; }
+}
