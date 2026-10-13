@@ -1,11 +1,43 @@
-.contact-block { padding: 84px 0; }
-.contact-card { background: var(--accent); color: white; border: var(--line); display: grid; grid-template-columns: 1.3fr .7fr; gap: 30px; padding: 50px; }
-.contact-card h2 { font-family: 'Archivo Black'; font-size: clamp(3rem, 5.6vw, 4.625rem); text-transform: uppercase; line-height: .88; margin: 0; letter-spacing: -.04em; }
-.contact-card p { font-size: 18px; line-height: 1.5; }
-.contact-card .btn { border-color: white; background: white; color: var(--ink); margin-top: 12px; }
+.contact-block {
+  padding: 84px 0;
+}
+.contact-card {
+  background: var(--accent);
+  color: white;
+  border: var(--line);
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 30px;
+  padding: 50px;
+}
+.contact-card h2 {
+  font-family: "Archivo Black";
+  font-size: clamp(3rem, 5.6vw, 4.625rem);
+  text-transform: uppercase;
+  line-height: 0.88;
+  margin: 0;
+  letter-spacing: -0.04em;
+}
+.contact-card p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.contact-card .btn {
+  border-color: white;
+  background: white;
+  color: var(--ink);
+  margin-top: 12px;
+}
 
 @media (max-width: 780px) {
-  .contact-block { padding: 54px 0; }
-  .contact-card { grid-template-columns: 1fr; padding: 28px; }
-  .contact-card p { font-size: 16px; }
+  .contact-block {
+    padding: 54px 0;
+  }
+  .contact-card {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+  .contact-card p {
+    font-size: 16px;
+  }
 }

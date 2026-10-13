@@ -1,19 +1,67 @@
-.service-grid { display: grid; grid-template-columns: repeat(5, 1fr); border-top: var(--line); border-left: var(--line); }
-.service { border-right: var(--line); border-bottom: var(--line); min-height: 310px; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; transition: .2s; }
-.service:hover { background: var(--sky); }
-.service:nth-child(2):hover, .service:nth-child(5):hover { background: var(--accent); color: white; }
-.num { font-size: 11px; font-weight: 800; }
-.service h3 { font-family: 'Archivo Black'; font-size: 28px; line-height: .97; text-transform: uppercase; margin: 0; }
-.service p { font-size: 13px; line-height: 1.45; }
-.go { font-size: 24px; }
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: var(--line);
+  border-left: var(--line);
+}
+.service {
+  border-right: var(--line);
+  border-bottom: var(--line);
+  min-height: 310px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+.service:hover {
+  background: var(--sky);
+}
+.service:nth-child(2):hover,
+.service:nth-child(5):hover {
+  background: var(--accent);
+  color: white;
+}
+.num {
+  font-size: 11px;
+  font-weight: 800;
+}
+.service h3 {
+  font-family: "Archivo Black";
+  font-size: 28px;
+  line-height: 0.97;
+  text-transform: uppercase;
+  margin: 0;
+}
+.service p {
+  font-size: 13px;
+  line-height: 1.45;
+}
+.go {
+  font-size: 24px;
+}
 
 @media (max-width: 1050px) {
-  .service-grid { grid-template-columns: repeat(2, 1fr); }
-  .service:last-child { grid-column: 1 / -1; min-height: 220px; }
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service:last-child {
+    grid-column: 1 / -1;
+    min-height: 220px;
+  }
 }
 
 @media (max-width: 600px) {
-  .service-grid { grid-template-columns: 1fr; }
-  .service, .service:last-child { grid-column: auto; min-height: 190px; padding: 20px; }
-  .service h3 { font-size: 25px; }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+  .service,
+  .service:last-child {
+    grid-column: auto;
+    min-height: 190px;
+    padding: 20px;
+  }
+  .service h3 {
+    font-size: 25px;
+  }
 }

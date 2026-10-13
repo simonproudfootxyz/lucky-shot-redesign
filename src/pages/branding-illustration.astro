@@ -2,4 +2,23 @@
 import ServicePage from '../components/ServicePage.astro';
 import { portfolioImages } from '../data/site';
 ---
-<ServicePage eyebrow="Branding + illustration" title="Distinctive visuals with personality built in." intro="Brand identities, illustration and custom artwork that carry the same crafted character as Lucky Shot's physical work." images={portfolioImages.branding} details={[{title:'Brand identity',text:'Logo systems and supporting visual direction for independent businesses and creative brands.'},{title:'Illustration',text:'Custom artwork for packaging, campaigns, products, print and digital use.'},{title:'Applied design',text:'Visual systems designed to work across menus, signage, packaging, merchandise and online touchpoints.'}]} />
+<ServicePage
+  eyebrow="Branding + illustration"
+  title="Distinctive visuals with personality built in."
+  intro="Brand identities, illustration and custom artwork that carry the same crafted character as Lucky Shot's physical work."
+  images={portfolioImages.branding}
+  details={[
+    {
+      title: 'Brand identity',
+      text: 'Logo systems and supporting visual direction for independent businesses and creative brands.',
+    },
+    {
+      title: 'Illustration',
+      text: 'Custom artwork for packaging, campaigns, products, print and digital use.',
+    },
+    {
+      title: 'Applied design',
+      text: 'Visual systems designed to work across menus, signage, packaging, merchandise and online touchpoints.',
+    },
+  ]}
+/>

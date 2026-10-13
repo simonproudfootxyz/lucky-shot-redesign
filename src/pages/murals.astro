@@ -2,4 +2,23 @@
 import ServicePage from '../components/ServicePage.astro';
 import { portfolioImages } from '../data/site';
 ---
-<ServicePage eyebrow="Large-scale artwork" title="Murals" intro="Large-scale painted work that turns blank walls and overlooked surfaces into memorable parts of a space." images={portfolioImages.murals} details={[{title:'Commercial murals',text:'Artwork for hospitality, retail, workplaces and public-facing spaces.'},{title:'Custom concepts',text:'Each mural is developed for its location, audience, scale and surrounding architecture.'},{title:'From sketch to wall',text:'A single creative process from initial idea and visual development through to final painted installation.'}]} />
+<ServicePage
+  eyebrow="Large-scale artwork"
+  title="Murals"
+  intro="Large-scale painted work that turns blank walls and overlooked surfaces into memorable parts of a space."
+  images={portfolioImages.murals}
+  details={[
+    {
+      title: 'Commercial murals',
+      text: 'Artwork for hospitality, retail, workplaces and public-facing spaces.',
+    },
+    {
+      title: 'Custom concepts',
+      text: 'Each mural is developed for its location, audience, scale and surrounding architecture.',
+    },
+    {
+      title: 'From sketch to wall',
+      text: 'A single creative process from initial idea and visual development through to final painted installation.',
+    },
+  ]}
+/>
