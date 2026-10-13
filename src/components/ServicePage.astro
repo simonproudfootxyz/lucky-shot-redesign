@@ -42,16 +42,97 @@ const { eyebrow, title, intro, images = [], details = [], accent = 'sky' } = Ast
         <p>{images.length} examples from the Lucky Shot archive.</p>
       </div>
       <div class="gallery-grid">
-        {images.map((image, index) => (
-          <figure class:list={['gallery-item', `pattern-${index % 7}`]}>
+        {images.map((image) => (
+          <button
+            class="gallery-item"
+            type="button"
+            data-src={image.src}
+            data-fallback={image.fallback}
+            data-alt={image.alt}
+            aria-haspopup="dialog"
+            aria-label={`View larger: ${image.alt}`}
+          >
             <PortfolioImage image={image} />
-          </figure>
+          </button>
         ))}
       </div>
     </div>
   </section>
+  <dialog class="lightbox" aria-label="Selected work">
+    <button class="lightbox-close" type="button" aria-label="Close">Close</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image">←</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-image" alt="" />
+      <figcaption>
+        <span class="lightbox-count"></span>
+        <span class="lightbox-caption"></span>
+      </figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image">→</button>
+  </dialog>
   <ContactCTA />
 </BaseLayout>
+<script>
+  const grid = document.querySelector('.gallery-grid');
+  const dialog = document.querySelector('.lightbox');
+
+  if (grid && dialog instanceof HTMLDialogElement) {
+    const items = [...grid.querySelectorAll('.gallery-item')];
+    const image = dialog.querySelector('.lightbox-image');
+    const caption = dialog.querySelector('.lightbox-caption');
+    const counter = dialog.querySelector('.lightbox-count');
+    let index = 0;
+
+    const show = (next) => {
+      if (!items.length || !(image instanceof HTMLImageElement)) return;
+      index = (next + items.length) % items.length;
+      const item = items[index];
+      if (!(item instanceof HTMLElement)) return;
+      image.alt = item.dataset.alt ?? '';
+      image.dataset.fallback = item.dataset.fallback ?? '';
+      image.src = item.dataset.src ?? '';
+      if (caption) caption.textContent = item.dataset.alt ?? '';
+      if (counter) counter.textContent = `${index + 1} / ${items.length}`;
+    };
+
+    image?.addEventListener('error', () => {
+      if (!(image instanceof HTMLImageElement)) return;
+      const fallback = image.dataset.fallback;
+      if (fallback && image.src !== fallback) image.src = fallback;
+    });
+
+    items.forEach((item, itemIndex) => {
+      item.addEventListener('click', () => {
+        show(itemIndex);
+        dialog.showModal();
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    dialog.querySelector('.lightbox-close')?.addEventListener('click', () => dialog.close());
+    dialog.querySelector('.lightbox-prev')?.addEventListener('click', () => show(index - 1));
+    dialog.querySelector('.lightbox-next')?.addEventListener('click', () => show(index + 1));
+
+    dialog.addEventListener('click', (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+
+    dialog.addEventListener('close', () => {
+      document.body.style.overflow = '';
+    });
+
+    dialog.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        show(index - 1);
+      }
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        show(index + 1);
+      }
+    });
+  }
+</script>
 <style>
   @import './ServicePage.css';
 </style>
