@@ -162,151 +162,153 @@ export const portfolioImages: Record<string, PortfolioImage[]> = {
       src: "/images/portfolio/chalkboards/10bbe10d-92b3-4799-a52a-1216739ad756.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/10bbe10d-92b3-4799-a52a-1216739ad756_rw_3840.jpeg?h=630ef6897e853a1becdf9ec9d32e2268",
-      alt: "Lucky Shot Studio Custom chalkboard project 1",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/bfc2ee10-5515-41d8-b692-612a927b4faf.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/bfc2ee10-5515-41d8-b692-612a927b4faf_rw_3840.jpeg?h=0a885a5f624b09aed54a5eb5748ea612",
-      alt: "Lucky Shot Studio Custom chalkboard project 2",
+
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/ca9f9658-3409-4bff-92d1-ec6019f36ecc.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/ca9f9658-3409-4bff-92d1-ec6019f36ecc_rw_3840.jpeg?h=6edb464a53422a3125c3e1f70441ff88",
-      alt: "Lucky Shot Studio Custom chalkboard project 3",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/61c9b85e-9783-44bb-afed-f6c47c7a4542.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/61c9b85e-9783-44bb-afed-f6c47c7a4542_rw_3840.jpeg?h=7448567bee35f239c583e75224f084d1",
-      alt: "Lucky Shot Studio Custom chalkboard project 4",
+      alt: "Lucky Shot Studio Custom chalkboard project",
+      thumbnail: true,
     },
     {
       src: "/images/portfolio/chalkboards/bd413b65-3000-45b0-9652-b93f2de805f9.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/bd413b65-3000-45b0-9652-b93f2de805f9_rw_1920.jpeg?h=18840e977bafdd22d79701b24f2685f3",
-      alt: "Lucky Shot Studio Custom chalkboard project 5",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/35895077-da89-4d53-a8f9-3c0260fb4ac6.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/35895077-da89-4d53-a8f9-3c0260fb4ac6_rw_1920.jpeg?h=061e45face3750e8207f31052bf086c3",
-      alt: "Lucky Shot Studio Custom chalkboard project 6",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/682c5eac-e007-4d28-a16d-a61a9def37ba.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/682c5eac-e007-4d28-a16d-a61a9def37ba_rw_3840.jpeg?h=1fe131b6b4e71158d41955de26d4aba0",
-      alt: "Lucky Shot Studio Custom chalkboard project 7",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/e510e00f-a955-47ff-8aac-d0fd276d8210.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/e510e00f-a955-47ff-8aac-d0fd276d8210_rw_1200.jpeg?h=880fdf85ecf57c587d689963b5ddf19a",
-      alt: "Lucky Shot Studio Custom chalkboard project 8",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/0315d07c-de24-42bd-bc7b-eced3c291577.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/0315d07c-de24-42bd-bc7b-eced3c291577_rw_1200.jpeg?h=06cfa46c008f52742fbf47aa3204f764",
-      alt: "Lucky Shot Studio Custom chalkboard project 9",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/505c75af-44df-42fa-9d38-49c8a3abb0d1.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/505c75af-44df-42fa-9d38-49c8a3abb0d1_rw_3840.jpeg?h=f7c32249f92cbe27f5f429f3c37694b5",
-      alt: "Lucky Shot Studio Custom chalkboard project 10",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/14e0d2b5-2faf-465e-b9b2-6ba067f1f068.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/14e0d2b5-2faf-465e-b9b2-6ba067f1f068_rw_1200.jpeg?h=6385e5687de40601f806a0debd33acef",
-      alt: "Lucky Shot Studio Custom chalkboard project 11",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/af0abf91-b0ce-43cc-ad2b-ac986a92c0e0.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/af0abf91-b0ce-43cc-ad2b-ac986a92c0e0_rw_1200.jpeg?h=88b6ea963f1745dcb1d9e0d9928a03e9",
-      alt: "Lucky Shot Studio Custom chalkboard project 12",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/7eb4e462-2dce-4b39-af33-2b19efc3cd24.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/7eb4e462-2dce-4b39-af33-2b19efc3cd24_rw_3840.jpeg?h=1ffcfb1194c99c799b87ca6772503074",
-      alt: "Lucky Shot Studio Custom chalkboard project 13",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/027372f8-7d6c-4d7d-9e97-f33df63107e0.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/027372f8-7d6c-4d7d-9e97-f33df63107e0_rw_3840.jpeg?h=9ba0f5f98021907e1c4282099846bcf6",
-      alt: "Lucky Shot Studio Custom chalkboard project 14",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/a6bab87f-5c47-48d0-bc54-dfba5b83b914.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/a6bab87f-5c47-48d0-bc54-dfba5b83b914_rw_3840.jpeg?h=eda00fcb5895529020e2abe50d4748cb",
-      alt: "Lucky Shot Studio Custom chalkboard project 15",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/1b01b93f-a8ba-45ca-b6b0-f7444e93fa15.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/1b01b93f-a8ba-45ca-b6b0-f7444e93fa15_rw_3840.jpeg?h=7529ff1fed700a63eef52aed0968109d",
-      alt: "Lucky Shot Studio Custom chalkboard project 16",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/89504e46-d44c-41f3-ae85-4eec43496d45.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/89504e46-d44c-41f3-ae85-4eec43496d45_rw_3840.jpeg?h=12f80c7be37ccee912c0c63ab987f9cb",
-      alt: "Lucky Shot Studio Custom chalkboard project 17",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/9e1188b3-4d3d-4a3d-9224-35455db265eb.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/9e1188b3-4d3d-4a3d-9224-35455db265eb_rw_3840.jpeg?h=c463b0bb2e05718835bbaac163e82e1d",
-      alt: "Lucky Shot Studio Custom chalkboard project 18",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/0637db72-689c-4277-9cfb-a8c4404a4347.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/0637db72-689c-4277-9cfb-a8c4404a4347_rw_3840.jpeg?h=f0204cf925f883ecdf8c9a720b4df7c1",
-      alt: "Lucky Shot Studio Custom chalkboard project 19",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/d1d8a257-5b6b-4e8b-80d5-18cd165a4f34.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/d1d8a257-5b6b-4e8b-80d5-18cd165a4f34_rw_1920.jpeg?h=85e36e0d9256ec7ef3e59998ff76571e",
-      alt: "Lucky Shot Studio Custom chalkboard project 20",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/67bbae06-6e47-4a40-954a-a8a4d0937887.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/67bbae06-6e47-4a40-954a-a8a4d0937887_rw_3840.jpeg?h=f7aece83fd773179680dbbf2725507a5",
-      alt: "Lucky Shot Studio Custom chalkboard project 21",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/78663859-e583-4dc7-a4fb-d5836785c08f.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/78663859-e583-4dc7-a4fb-d5836785c08f_rw_3840.jpeg?h=fc08f6a87aac041e0654b2fa7db8ec7b",
-      alt: "Lucky Shot Studio Custom chalkboard project 22",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/f147d12c-fabf-49f9-a5d9-afeea03eaa78.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/f147d12c-fabf-49f9-a5d9-afeea03eaa78_rw_1920.jpeg?h=4b7ead47dd1f66b2d42ea4da8a44ed0e",
-      alt: "Lucky Shot Studio Custom chalkboard project 23",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/7fb7da08-9066-4982-9bdd-c76486f8059d.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/7fb7da08-9066-4982-9bdd-c76486f8059d_rw_3840.jpeg?h=c8c25e10bf5bc9ce50752d3027e59461",
-      alt: "Lucky Shot Studio Custom chalkboard project 24",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
     {
       src: "/images/portfolio/chalkboards/0c5284b4-98a3-4a01-832e-37b3d26e8769.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/0c5284b4-98a3-4a01-832e-37b3d26e8769_rw_3840.jpeg?h=877767445025511073f0e0c7d6312c55",
-      alt: "Lucky Shot Studio Custom chalkboard project 25",
+      alt: "Lucky Shot Studio Custom chalkboard project",
     },
   ],
   murals: [
