@@ -28,6 +28,10 @@ code {
   border-radius: 3px;
   color: var(--cream);
 }
+::selection {
+  background: var(--accent);
+  color: var(--ink);
+}
 a {
   color: inherit;
   text-decoration: none;

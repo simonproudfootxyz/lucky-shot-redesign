@@ -66,9 +66,6 @@
   font-size: 16px;
   line-height: 1.55;
 }
-.gallery {
-  padding: 0 0 90px;
-}
 .gallery-head {
   display: flex;
   justify-content: space-between;

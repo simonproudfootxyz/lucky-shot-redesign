@@ -22,26 +22,10 @@ const feature = portfolioThumbnail(images);
       )}
     </div>
   </section>
-  <section class="section">
-    <div class="shell">
-      <div class="details-grid">
-        <div class="caps">What we do</div>
-        <div>
-          {details.map((item) => (
-            <div class="detail">
-              <h2>{item.title}</h2>
-              <p>{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="gallery">
+  <section class="section gallery">
     <div class="shell">
       <div class="gallery-head">
         <div class="caps">Selected work</div>
-        <p>{images.length} examples from the Lucky Shot archive.</p>
       </div>
       <div class="gallery-grid">
         {images.map((image) => (

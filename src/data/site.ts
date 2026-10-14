@@ -17,32 +17,32 @@ export const services = [
     title: "Signs",
     href: "/signs/",
     description:
-      "Handpainted shop signs, boards, windows and custom lettering.",
+      "TK: Handpainted shop signs, boards, windows and custom lettering",
   },
   {
     num: "02",
     title: "Chalkboards",
     href: "/chalkboards/",
-    description: "Menus and display boards made to work hard in busy spaces.",
+    description: "TK: Menus and display boards",
   },
   {
     num: "03",
     title: "Digital Services",
     href: "/digital-services/",
     description:
-      "Menus, collateral, social graphics, print artwork and practical design support.",
+      "TK: Menus, social graphics, print artwork, and practical design support",
   },
   {
     num: "04",
     title: "Branding + Illustration",
     href: "/branding-illustration/",
-    description: "Identity and custom artwork with personality built in.",
+    description: "TK: Brand identity and custom artwork",
   },
   {
     num: "05",
     title: "Murals",
     href: "/murals/",
-    description: "Large-scale artwork that changes how a space feels.",
+    description: "TK: Large-scale artwork that changes how a space feels",
   },
 ];
 
@@ -316,51 +316,51 @@ export const portfolioImages: Record<string, PortfolioImage[]> = {
       src: "/images/portfolio/murals/aa45b8b2-a817-4908-af66-eb4db590f9c8.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/aa45b8b2-a817-4908-af66-eb4db590f9c8_rw_1920.png?h=f8a703fc8720bf9ef39410688053a219",
-      alt: "Lucky Shot Studio Mural project 1",
+      alt: "Lucky Shot Studio Mural project",
     },
 
     {
       src: "/images/portfolio/murals/e4ffc11a-b9a3-4404-9f32-e9699a8241fb.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/e4ffc11a-b9a3-4404-9f32-e9699a8241fb_rw_3840.jpeg?h=520de8f23fccac0bb424851c6d809a42",
-      alt: "Lucky Shot Studio Mural project 2",
+      alt: "Lucky Shot Studio Mural project",
       thumbnail: true,
     },
     {
       src: "/images/portfolio/murals/185d1e75-2bf5-41a1-8216-4b1788790af0.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/185d1e75-2bf5-41a1-8216-4b1788790af0_rw_3840.jpeg?h=ae355f780cd0d574bfeb35aecad77425",
-      alt: "Lucky Shot Studio Mural project 3",
+      alt: "Lucky Shot Studio Mural project",
     },
     {
       src: "/images/portfolio/murals/0b8e4592-5146-4298-af30-995ea1f40d1a.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/0b8e4592-5146-4298-af30-995ea1f40d1a_rw_3840.jpeg?h=9acb3405c4d093c6d75eff8eacb91b70",
-      alt: "Lucky Shot Studio Mural project 4",
+      alt: "Lucky Shot Studio Mural project",
     },
     {
       src: "/images/portfolio/murals/d05e355c-3d77-44ca-bea5-f41de3befe23.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/d05e355c-3d77-44ca-bea5-f41de3befe23_rw_3840.jpeg?h=669ee6d1d75573e2bc503f8cffa36f26",
-      alt: "Lucky Shot Studio Mural project 5",
+      alt: "Lucky Shot Studio Mural project",
     },
     {
       src: "/images/portfolio/murals/b91bc516-fa55-41ca-9f88-a97fd282e358.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/b91bc516-fa55-41ca-9f88-a97fd282e358_rw_1920.jpeg?h=84e0121ae6496628cf93cc8be18092fa",
-      alt: "Lucky Shot Studio Mural project 6",
+      alt: "Lucky Shot Studio Mural project",
     },
     {
       src: "/images/portfolio/murals/b894a7a2-a956-44ae-b1fc-43871e1125df.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/b894a7a2-a956-44ae-b1fc-43871e1125df_rw_1200.png?h=0be340f541b8a55160b2ae1c470cb934",
-      alt: "Lucky Shot Studio Mural project 7",
+      alt: "Lucky Shot Studio Mural project",
     },
     {
       src: "/images/portfolio/murals/628c9ba3-d566-4646-9c6d-2ace145ab286.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/628c9ba3-d566-4646-9c6d-2ace145ab286_rw_1920.jpeg?h=f848fe73595f53cf5745ecefd289bd0f",
-      alt: "Lucky Shot Studio Mural project 8",
+      alt: "Lucky Shot Studio Mural project",
     },
   ],
   branding: [
@@ -368,128 +368,128 @@ export const portfolioImages: Record<string, PortfolioImage[]> = {
       src: "/images/portfolio/branding/f105099e-0622-4614-9c1f-d9336fa2190a.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/f105099e-0622-4614-9c1f-d9336fa2190a_rw_3840.jpg?h=e6a7566e2c8dfa0064380a035287a017",
-      alt: "Lucky Shot Studio Branding and illustration project 1",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/689cce4a-2732-480d-85c0-1a43ce874bbd.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/689cce4a-2732-480d-85c0-1a43ce874bbd_rw_1200.png?h=53c52d4797130c9ad217d1356a091289",
-      alt: "Lucky Shot Studio Branding and illustration project 2",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/0b250b86-8317-4bb7-a0d9-5797f86e577e.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/0b250b86-8317-4bb7-a0d9-5797f86e577e_rw_1920.png?h=5932241b348d3efc824dc31ba4ee39e6",
-      alt: "Lucky Shot Studio Branding and illustration project 3",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/4f6b045a-e1a0-48ff-9e95-22fb17b030d7.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/4f6b045a-e1a0-48ff-9e95-22fb17b030d7_rw_1920.png?h=3a42710a20b052cbc3fa4b553b0ca5c5",
-      alt: "Lucky Shot Studio Branding and illustration project 4",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/546f62e9-b4df-4e40-b455-f7fdf39526f1.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/546f62e9-b4df-4e40-b455-f7fdf39526f1_rw_1200.png?h=4a40de325edf11504e9a61207ccd38a4",
-      alt: "Lucky Shot Studio Branding and illustration project 5",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/fc03ce26-78b9-4b0a-af7f-f3b0e6ae4dea.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/fc03ce26-78b9-4b0a-af7f-f3b0e6ae4dea_rw_1920.png?h=2bd0884ea6bceb08e2b43725b9f59ba6",
-      alt: "Lucky Shot Studio Branding and illustration project 6",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/cc266901-23b9-4485-9424-a46202f55171.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/cc266901-23b9-4485-9424-a46202f55171_rw_1200.png?h=a3aa7103e7c5800d278d311596c92acb",
-      alt: "Lucky Shot Studio Branding and illustration project 7",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/c199c5ac-c2de-47d0-a62f-ca3f7403ceb0.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/c199c5ac-c2de-47d0-a62f-ca3f7403ceb0_rw_1200.png?h=5fa708c54fc105f9900f6ebf0cf26764",
-      alt: "Lucky Shot Studio Branding and illustration project 8",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/62fa7faf-0b74-45ca-ab3b-1c65b2b6080e.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/62fa7faf-0b74-45ca-ab3b-1c65b2b6080e_rw_1920.JPG?h=7cf016752b1cb9bb00da005f33b5d389",
-      alt: "Lucky Shot Studio Branding and illustration project 9",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/7304356b-23b9-4f37-851d-199346dd78a8.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/7304356b-23b9-4f37-851d-199346dd78a8_rw_1200.PNG?h=38c996bc3a6aefcc7330adb80aedbe38",
-      alt: "Lucky Shot Studio Branding and illustration project 10",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/c4c3296d-8672-41e8-ac4f-2aa4b0a61d0a.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/c4c3296d-8672-41e8-ac4f-2aa4b0a61d0a_rw_1200.jpeg?h=7fa732a4ec1d160f9618a6af72f42ae2",
-      alt: "Lucky Shot Studio Branding and illustration project 11",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/848a120d-faaa-4f82-abda-b7b7591f8edf.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/848a120d-faaa-4f82-abda-b7b7591f8edf_rw_3840.png?h=3a365c101a546d807b9555888b19d72a",
-      alt: "Lucky Shot Studio Branding and illustration project 12",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/223a66f5-c576-4dd9-bc3d-3bfe559c9db0.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/223a66f5-c576-4dd9-bc3d-3bfe559c9db0_rw_1920.png?h=0bfc9c1dc7742587c0aa0ce759d0ac7d",
-      alt: "Lucky Shot Studio Branding and illustration project 13",
+      alt: "Lucky Shot Studio Branding and illustration project",
       thumbnail: true,
     },
     {
       src: "/images/portfolio/branding/7ef3bae0-8465-4e7c-8b06-85d0c71a2add.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/7ef3bae0-8465-4e7c-8b06-85d0c71a2add_rw_3840.png?h=bae1320dfc70bf00e8adfa87b73ee3b2",
-      alt: "Lucky Shot Studio Branding and illustration project 14",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/b4bccaf7-81c4-44fe-b920-63348a78ffff.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/b4bccaf7-81c4-44fe-b920-63348a78ffff_rw_3840.png?h=4fd4b187364692bf8896db8f07c7adfa",
-      alt: "Lucky Shot Studio Branding and illustration project 15",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/f0c701ef-1acd-41b6-bd0e-41866c3cd9b8.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/f0c701ef-1acd-41b6-bd0e-41866c3cd9b8_rw_1200.png?h=d72582d14d160c4b585d31c580fb6df2",
-      alt: "Lucky Shot Studio Branding and illustration project 16",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/0fbc8b0e-75ff-4091-9c6b-d8d25caec830.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/0fbc8b0e-75ff-4091-9c6b-d8d25caec830_rw_1920.png?h=eb7a57107ba03eb569c346723eb5b1a9",
-      alt: "Lucky Shot Studio Branding and illustration project 17",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/cf4ae85e-4d48-4ea9-b5ed-97727baeeed1.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/cf4ae85e-4d48-4ea9-b5ed-97727baeeed1_rw_1920.jpg?h=697bac1f06d6ba7549b0229eeb92661a",
-      alt: "Lucky Shot Studio Branding and illustration project 18",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/2fc8d54c-0299-4995-aedf-d00df6fd102e.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/2fc8d54c-0299-4995-aedf-d00df6fd102e_rw_1920.jpg?h=5bf05ca8441486db53fe05929969a19f",
-      alt: "Lucky Shot Studio Branding and illustration project 19",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/f7f2eb29-59bb-48cb-9f9c-beefe281c839.png",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/f7f2eb29-59bb-48cb-9f9c-beefe281c839_rw_1920.png?h=916de02e6c9ce6f58de1c4d131e61b9c",
-      alt: "Lucky Shot Studio Branding and illustration project 20",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
     {
       src: "/images/portfolio/branding/29e9b111-3457-4b33-b8e6-dfd78658d2e3.jpg",
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/29e9b111-3457-4b33-b8e6-dfd78658d2e3_rw_1920.jpg?h=e90b5629d32b5db7c48ba1da4bd7c76a",
-      alt: "Lucky Shot Studio Branding and illustration project 21",
+      alt: "Lucky Shot Studio Branding and illustration project",
     },
   ],
 };
