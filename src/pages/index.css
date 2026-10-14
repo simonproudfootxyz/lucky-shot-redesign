@@ -64,7 +64,20 @@
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 800;
-  transform: rotate(8deg);
+  /* rotate: 8deg; */
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
 }
 .marquee {
   border-left: var(--line);

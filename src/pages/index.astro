@@ -3,7 +3,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ServiceGrid from '../components/ServiceGrid.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import PortfolioImage from '../components/PortfolioImage.astro';
-import { portfolioImages, aboutImage } from '../data/site';
+import { portfolioImages, aboutImage, portfolioThumbnail } from '../data/site';
+const thumbnails = {
+  signs: portfolioThumbnail(portfolioImages.signs),
+  chalkboards: portfolioThumbnail(portfolioImages.chalkboards),
+  branding: portfolioThumbnail(portfolioImages.branding),
+  murals: portfolioThumbnail(portfolioImages.murals),
+};
 ---
 <BaseLayout title="Lucky Shot Studio | Signwriting, Murals & Design" description="Handpainted signs, chalkboards, murals and practical design services for hospitality, retail and independent brands.">
   <section class="hero">
@@ -12,8 +18,9 @@ import { portfolioImages, aboutImage } from '../data/site';
         <div class="hero-copy">
           <div>
             <div class="caps">Independent signwriting + design studio</div>
-            <h1>Make your business impossible to miss.</h1>
-            <p>Handpainted signs, chalkboards, murals and practical design services for hospitality, retail and independent brands.</p>
+            <h1>Lucky Shot Studio</h1>
+            <h2>You only get one shot to make a first impression</h2>
+            <p>On a mission to put the <code>fun</code> in functional design</p>
             <div class="hero-ctas">
               <a class="btn fill" href="#work">See the work ↓</a>
               <a class="btn" href="/contact/">Start a project →</a>
@@ -21,29 +28,9 @@ import { portfolioImages, aboutImage } from '../data/site';
           </div>
           <div class="caps location">Nelson, Aotearoa New Zealand · Available for projects near + far</div>
         </div>
-        <div class="hero-image" style={`background-image: url('${portfolioImages.murals[1].src}')`}>
+        <div class="hero-image" style={`background-image: url('${portfolioImages.signs[0].src}')`}>
           <!-- <PortfolioImage image={portfolioImages.murals[2]} loading="eager" fetchpriority="high" /> -->
-          <div class="stamp">Painted<br />designed<br />by hand</div>
-        </div>
-      </div>
-      <div class="marquee" aria-hidden="true">
-        <div class="track">
-          <span>Signs ★ Chalkboards ★ Murals ★ Branding ★ Illustration ★ Digital Design ★</span>
-          <span>Signs ★ Chalkboards ★ Murals ★ Branding ★ Illustration ★ Digital Design ★</span>
-        </div>
-      </div>
-      <div class="proof">
-        <div>
-          <strong>01</strong>
-          <span>One studio from concept to finished artwork.</span>
-        </div>
-        <div>
-          <strong>02</strong>
-          <span>Traditional sign craft without the old-fashioned process.</span>
-        </div>
-        <div>
-          <strong>03</strong>
-          <span>Commercial work made to suit your actual space and audience.</span>
+          <div class="stamp">Painted &amp;<br />designed<br />by hand</div>
         </div>
       </div>
     </div>
@@ -67,52 +54,21 @@ import { portfolioImages, aboutImage } from '../data/site';
       </div>
       <div class="portfolio-grid">
         <div class="left">
-          <a class="frame one" href="/signs/" style={`background-image: url('${portfolioImages.signs[0].src}')`}>
+          <a class="frame one" href="/signs/" style={`background-image: url('${thumbnails.signs.src}')`}>
             <span class="label">Signs</span>
           </a>
-          <a class="frame two" href="/chalkboards/" style={`background-image: url('${portfolioImages.chalkboards[0].src}')`}>
+          <a class="frame two" href="/chalkboards/" style={`background-image: url('${thumbnails.chalkboards.src}')`}>
             <span class="label">Chalkboards</span>
           </a>
         </div>
         <div class="right">
-          <a class="frame three" href="/branding-illustration/" style={`background-image: url('${portfolioImages.branding[0].src}')`}>
+          <a class="frame three" href="/branding-illustration/" style={`background-image: url('${thumbnails.branding.src}')`}>
             <span class="label">Branding + Illustration</span>
           </a>
-          <a class="frame four" href="/murals/" style={`background-image: url('${portfolioImages.murals[0].src}')`}>
+          <a class="frame four" href="/murals/" style={`background-image: url('${thumbnails.murals.src}')`}>
             <span class="label">Murals</span>
           </a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="design-band">
-    <div class="shell design-grid">
-      <div>
-        <div class="caps">Digital services</div>
-        <h2>Good design, without the agency fog.</h2>
-        <p>Clear packages for businesses that need professional visual work without turning it into a six-month brand project. Package details are presented as real, searchable content rather than a flattened price-list image.</p>
-        <div class="price-cards">
-          <article class="price">
-            <div class="caps">First Shot</div>
-            <b>Essentials</b>
-            <span>For straightforward, useful design jobs with a clear brief.</span>
-          </article>
-          <article class="price">
-            <div class="caps">On the Mark</div>
-            <b>More room</b>
-            <span>For a fuller set of collateral or a project that needs more exploration.</span>
-          </article>
-          <article class="price">
-            <div class="caps">Sure Shot</div>
-            <b>Complete</b>
-            <span>For larger design packages and cohesive brand applications.</span>
-          </article>
-        </div>
-      </div>
-      <div class="design-side">
-        <div class="note">The Digital Services page is ready for the client's final package names, pricing, inclusions and FAQs when supplied.</div>
-        <a class="btn" href="/digital-services/">Explore digital services →</a>
       </div>
     </div>
   </section>

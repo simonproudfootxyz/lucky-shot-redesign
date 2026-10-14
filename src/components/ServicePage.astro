@@ -2,7 +2,9 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from './ContactCTA.astro';
 import PortfolioImage from './PortfolioImage.astro';
+import { portfolioThumbnail } from '../data/site';
 const { eyebrow, title, intro, images = [], details = [], accent = 'sky' } = Astro.props;
+const feature = portfolioThumbnail(images);
 ---
 <BaseLayout title={`${title} | Lucky Shot Studio`} description={intro}>
   <section class={`service-hero ${accent}`}>
@@ -13,9 +15,9 @@ const { eyebrow, title, intro, images = [], details = [], accent = 'sky' } = Ast
         <p>{intro}</p>
         <a class="btn fill" href="/contact/">Start a project →</a>
       </div>
-      {images[0] && (
+      {feature && (
         <div class="service-feature">
-          <PortfolioImage image={images[0]} loading="eager" fetchpriority="high" />
+          <PortfolioImage image={feature} loading="eager" fetchpriority="high" />
         </div>
       )}
     </div>
