@@ -65,7 +65,7 @@
   text-transform: uppercase;
   font-weight: 800;
   /* rotate: 8deg; */
-  animation: rotate 10s linear infinite;
+  animation: rotate 4s linear infinite;
 }
 @keyframes rotate {
   0% {
