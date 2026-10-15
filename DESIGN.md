@@ -226,7 +226,7 @@ Navigation order:
 4. Branding / Illustration
 5. Murals
 6. About
-7. Shop ↗
+7. Shop &nearr;
 8. Enquire
 
 Shop is external.

@@ -15,7 +15,7 @@ const { currentPath = '/' } = Astro.props;
       ))}
     </nav>
     <div class="head-actions">
-      <a class="btn shop" href={shopUrl} target="_blank" rel="noreferrer">Shop ↗</a>
+      <a class="btn shop" href={shopUrl} target="_blank" rel="noreferrer">Shop &nearr;</a>
       <a class="btn enquire" href="/contact/">Enquire</a>
       <button class="menu-button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
         <span></span>
@@ -27,11 +27,11 @@ const { currentPath = '/' } = Astro.props;
     <nav class="shell" aria-label="Mobile navigation">
       {navItems.map((item) => (
         <a href={item.href}>
-          {item.label}<span>↗</span>
+          {item.label}<span>&nearr;</span>
         </a>
       ))}
-      <a href="/contact/">Contact<span>↗</span></a>
-      <a href={shopUrl} target="_blank" rel="noreferrer">Shop<span>↗</span></a>
+      <a href="/contact/">Contact<span>&nearr;</span></a>
+      <a href={shopUrl} target="_blank" rel="noreferrer">Shop<span>&nearr;</span></a>
     </nav>
   </div>
 </header>
