@@ -26,7 +26,6 @@ code {
   background: var(--accent);
   padding: 0 5px;
   border-radius: 3px;
-  color: var(--cream);
 }
 ::selection {
   background: var(--accent);
