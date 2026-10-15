@@ -16,33 +16,32 @@ export const services = [
     num: "01",
     title: "Signs",
     href: "/signs/",
-    description:
-      "TK: Handpainted shop signs, boards, windows and custom lettering",
+    description: "Handpainted shop signs, boards, windows and custom lettering",
   },
   {
     num: "02",
     title: "Chalkboards",
     href: "/chalkboards/",
-    description: "TK: Menus and display boards",
+    description: "Menus and display boards",
   },
   {
     num: "03",
     title: "Digital Services",
     href: "/digital-services/",
     description:
-      "TK: Menus, social graphics, print artwork, and practical design support",
+      "Menus, social graphics, print artwork, and practical design support",
   },
   {
     num: "04",
     title: "Branding + Illustration",
     href: "/branding-illustration/",
-    description: "TK: Brand identity and custom artwork",
+    description: "Brand identity and custom artwork",
   },
   {
     num: "05",
     title: "Murals",
     href: "/murals/",
-    description: "TK: Large-scale artwork that changes how a space feels",
+    description: "Large-scale artwork that changes how a space feels",
   },
 ];
 
