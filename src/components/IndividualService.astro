@@ -1,0 +1,13 @@
+---
+const { name, price, note } = Astro.props;
+---
+<article class="individual-service">
+  <div>
+    <h3>{name}</h3>
+    {note && <p>{note}</p>}
+  </div>
+  <p class="price">{price}</p>
+</article>
+<style>
+  @import './IndividualService.css';
+</style>

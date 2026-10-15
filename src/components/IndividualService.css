@@ -1,0 +1,36 @@
+.individual-service {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 32px;
+  align-items: center;
+  padding: 22px 4px;
+}
+.individual-service h3 {
+  font-family: "Archivo Black";
+  text-transform: uppercase;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  line-height: 1;
+  margin: 0;
+}
+.individual-service p {
+  margin: 8px 0 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.individual-service .price {
+  margin: 0;
+  font-family: "Archivo Black";
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .individual-service {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 0;
+  }
+}

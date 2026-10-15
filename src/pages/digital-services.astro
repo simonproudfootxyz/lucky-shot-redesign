@@ -1,13 +1,28 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from '../components/ContactCTA.astro';
+import IndividualService from '../components/IndividualService.astro';
+
+const individualServices = [
+  { name: 'Logo design', price: '$500', note: '2 concepts · 1 revision' },
+  { name: 'Logo design', price: '$850', note: '3 concepts · 2 revisions' },
+  { name: 'Monogram design', price: '$300' },
+  { name: 'Business card design', price: '$250–500' },
+  { name: 'Brand guidelines document', price: '$1000–$2000' },
+  { name: 'Illustrations', price: '$400–$1500', note: 'Price varies with detail and usage' },
+  { name: 'Hourly signage design rate', price: '$150' },
+  { name: 'Hourly graphic design rate', price: '$50' },
+  { name: 'Chalkboards A1 size', price: '$150–350' },
+  { name: 'Menu boards', price: '$800–2000' },
+  { name: 'Murals', price: '$150/sqm' },
+];
 ---
 <BaseLayout title="Digital Services | Lucky Shot Studio" description="Practical digital design packages for independent businesses and brands.">
   <section class="digital-hero">
     <div class="shell">
       <div class="caps">Digital services</div>
-      <h1>Good design, without the agency fog.</h1>
-      <p>Flexible design support for businesses that need useful, professional visual work without turning every job into a full rebrand.</p>
+      <h1>Good design, great vibes</h1>
+      <p>Design support for businesses that need useful, tasteful, and professional visual materials</p>
       <a class="btn fill" href="/contact/">Talk about a project →</a>
     </div>
   </section>
@@ -19,58 +34,67 @@ import ContactCTA from '../components/ContactCTA.astro';
       </div>
       <div class="package-grid">
         <article>
-          <div class="caps">First Shot</div>
-          <h3>Essentials</h3>
-          <p>For straightforward design jobs with a clear brief and focused deliverables.</p>
+          <div class="caps">Essentials</div>
+          <h3>First Shot</h3>
+          <p>$800</p>
           <ul>
-            <li>Useful for single-piece design work</li>
-            <li>Clear scope and agreed deliverables</li>
-            <li>Final files supplied ready to use</li>
+            <li>Primary logo</li>
+            <li>2 revisions</li>
+            <li>Colour palette</li>
+            <li>Business card design</li>
+            <li>Typography</li>
           </ul>
           <a href="/contact/">Enquire ↗</a>
         </article>
         <article class="featured">
-          <div class="caps">On the Mark</div>
-          <h3>More Room</h3>
-          <p>For projects that need more exploration, more assets, or a fuller set of collateral.</p>
+          <div class="caps">More Room</div>
+          <h3>On the Mark</h3>
+          <p>$1500</p>
           <ul>
-            <li>Multiple related design pieces</li>
-            <li>More concept development</li>
-            <li>Consistent visual direction across assets</li>
+            <li>Primary logo</li>
+            <li>3 revisions</li>
+            <li>2 logo variations</li>
+            <li>Business card design</li>
+            <li>Typography</li>
+            <li>Basic brand guidelines</li>
+            <li>Social media launch templates</li>
+            <li>Custom colour palette</li>
           </ul>
           <a href="/contact/">Enquire ↗</a>
         </article>
         <article>
-          <div class="caps">Sure Shot</div>
-          <h3>Complete</h3>
-          <p>For larger packages and businesses that need a more cohesive set of brand applications.</p>
+          <div class="caps">Complete</div>
+          <h3>Sure Shot</h3>
+          <p>$3000</p>
           <ul>
-            <li>Broader visual system</li>
-            <li>Multiple brand applications</li>
-            <li>Designed for ongoing use</li>
+            <li>Full logo suite</li>
+            <li>Brand identity system</li>
+            <li>Business card design</li>
+            <li>Custom colour palette</li>
+            <li>Typography system</li>
+            <li>Social media launch templates</li>
+            <li>Brand pattern & graphic elements</li>
+            <li>Brand strategy (vision &amp; voice)</li>
+            <li>Complete brand identity</li>
           </ul>
           <a href="/contact/">Enquire ↗</a>
         </article>
       </div>
-      <p class="placeholder-note">Package names, final prices, exact inclusions and FAQs can be replaced with the client's approved copy without changing this structure.</p>
     </div>
   </section>
   <section class="use-cases">
     <div class="shell">
       <div class="section-head">
-        <div class="caps">Useful for</div>
-        <h2>Practical design support where your brand actually shows up.</h2>
+        <div class="caps">A la carte</div>
+        <h2>Individual services</h2>
       </div>
-      <div class="use-grid">
-        <span>Menus</span>
-        <span>Social graphics</span>
-        <span>Print collateral</span>
-        <span>Posters</span>
-        <span>Promotional artwork</span>
-        <span>Digital assets</span>
-        <span>Packaging</span>
-        <span>Brand applications</span>
-      </div>
+      <ul class="individual-services">
+        {individualServices.map((service) => (
+          <li>
+            <IndividualService name={service.name} price={service.price} note={service.note} />
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
   <ContactCTA />
