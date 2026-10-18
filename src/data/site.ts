@@ -181,7 +181,7 @@ export const portfolioImages: Record<string, PortfolioImage[]> = {
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/61c9b85e-9783-44bb-afed-f6c47c7a4542_rw_3840.jpeg?h=7448567bee35f239c583e75224f084d1",
       alt: "Lucky Shot Studio Custom chalkboard project",
-      thumbnail: true,
+      // thumbnail: true,
     },
     {
       src: "/images/portfolio/chalkboards/bd413b65-3000-45b0-9652-b93f2de805f9.jpg",
@@ -236,6 +236,7 @@ export const portfolioImages: Record<string, PortfolioImage[]> = {
       fallback:
         "https://cdn.myportfolio.com/f675556b-f599-4111-96c8-71142b99c15a/7eb4e462-2dce-4b39-af33-2b19efc3cd24_rw_3840.jpeg?h=1ffcfb1194c99c799b87ca6772503074",
       alt: "Lucky Shot Studio Custom chalkboard project",
+      thumbnail: true,
     },
     {
       src: "/images/portfolio/chalkboards/027372f8-7d6c-4d7d-9e97-f33df63107e0.jpg",
