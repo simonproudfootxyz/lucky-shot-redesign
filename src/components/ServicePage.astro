@@ -2,8 +2,24 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from './ContactCTA.astro';
 import PortfolioImage from './PortfolioImage.astro';
+import Stamp from './Stamp.astro';
 import { portfolioThumbnail } from '../data/site';
-const { eyebrow, title, intro, images = [], details = [], accent = 'sky' } = Astro.props;
+const {
+  eyebrow,
+  title,
+  intro,
+  images = [],
+  details = [],
+  accent = 'sky',
+  stampSun = false,
+  stampEyes = false,
+  stampWizardHand = false,
+  stampFlames = false,
+  stampFish = false,
+  stampBackground = true,
+  stampRotate = false,
+  stampRotationalBounce = false,
+} = Astro.props;
 const feature = portfolioThumbnail(images);
 ---
 <BaseLayout title={`${title} | Lucky Shot Studio`} description={intro}>
@@ -18,6 +34,16 @@ const feature = portfolioThumbnail(images);
       {feature && (
         <div class="service-feature">
           <PortfolioImage image={feature} loading="eager" fetchpriority="high" />
+          <Stamp
+            sun={stampSun}
+            eyes={stampEyes}
+            wizardHand={stampWizardHand}
+            flames={stampFlames}
+            fish={stampFish}
+            background={stampBackground}
+            rotate={stampRotate}
+            rotationalBounce={stampRotationalBounce}
+          />
         </div>
       )}
     </div>

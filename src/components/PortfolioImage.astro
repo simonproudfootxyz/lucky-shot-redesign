@@ -5,7 +5,7 @@ const { image, class: className = undefined, loading = 'lazy', fetchpriority = u
   src={image.src}
   data-fallback={image.fallback}
   alt={image.alt ?? ''}
-  class={className}
+  class={`portfolio-image ${className}`}
   loading={loading}
   fetchpriority={fetchpriority}
   onerror="if(this.dataset.fallback && this.src !== this.dataset.fallback){this.src=this.dataset.fallback}"

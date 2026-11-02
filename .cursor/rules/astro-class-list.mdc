@@ -1,0 +1,19 @@
+---
+description: Format Astro class:list conditional classes multiline
+globs: "**/*.astro"
+alwaysApply: false
+---
+
+# Astro `class:list` formatting
+
+When using `class:list` with a base class plus conditional class map, put each conditional entry on its own line:
+
+```astro
+<div class:list={['stamp', { 
+  'stamp-sun': sun, 
+  'stamp--no-background': !background, 
+  'stamp--rotate': rotate, 
+  'stamp--rotational-bounce': rotationalBounce }]}>
+```
+
+Do not collapse the conditional object onto one line when it has more than one entry.

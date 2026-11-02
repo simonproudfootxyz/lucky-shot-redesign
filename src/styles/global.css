@@ -47,6 +47,11 @@ textarea {
   width: min(var(--shell), calc(100% - 56px));
   margin-inline: auto;
 }
+
+.location {
+  padding-top: 1.5rem;
+}
+
 .caps {
   text-transform: uppercase;
   letter-spacing: 0.11em;
@@ -122,11 +127,93 @@ textarea {
   }
 }
 
+.stamp {
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  background: var(--sky);
+  border: var(--line);
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 800;
+  z-index: 1;
+
+  &.stamp--no-background {
+    background: none;
+    border: none;
+    width: 200px;
+    height: 200px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &.stamp--rotate {
+    animation: stamp-rotate 24s linear infinite;
+  }
+
+  &.stamp--rotational-bounce {
+    animation: stamp-rotational-bounce 4s ease-in-out infinite;
+  }
+
+  img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    display: block;
+    filter: drop-shadow(6px 6px 9px rgba(0, 0, 0, 0.5));
+  }
+}
+
+/* .stamp.stamp-sun img,
+.stamp.stamp-eyes img,
+.stamp.stamp-wizard-hand img {
+  width: 100%;
+  height: 100%;
+  
+} */
+@keyframes stamp-rotational-bounce {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes stamp-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
 @media (max-width: 600px) {
   .shell {
     width: min(var(--shell), calc(100% - 28px));
   }
   .section {
     padding: 56px 0;
+  }
+  .stamp {
+    width: 96px;
+    height: 96px;
+    right: 18px;
+    top: 18px;
+    font-size: 10px;
   }
 }

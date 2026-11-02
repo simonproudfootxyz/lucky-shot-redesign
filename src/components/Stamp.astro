@@ -1,0 +1,35 @@
+---
+const {
+  sun = false,
+  eyes = false,
+  wizardHand = false,
+  flames = false,
+  fish = false,
+  background = true,
+  rotate = false,
+  rotationalBounce = false,
+} = Astro.props;
+---
+<div class:list={['stamp', { 
+  'stamp-sun': sun, 
+  'stamp-eyes': eyes, 
+  'stamp-wizard-hand': wizardHand, 
+  'stamp-flames': flames, 
+  'stamp-fish': fish, 
+  'stamp--no-background': !background, 
+  'stamp--rotate': rotate, 
+  'stamp--rotational-bounce': rotationalBounce }]}>
+  {sun ? (
+    <img src="/sun.svg" alt="Show me the signs" width="200" height="200" />
+  ) : eyes ? (
+    <img src="/eyes.svg" alt="Take a look" width="200" height="200" />
+  ) : wizardHand ? (
+    <img src="/wizard-hand.svg" alt="Inquire" width="200" height="200" />
+  ) : flames ? (
+    <img src="/flames.svg" alt="Sign me up" width="200" height="200" />
+  ) : fish ? (
+    <img src="/fish.svg" alt="Let's talk" width="200" height="200" />
+  ) : (
+    <>Painted &amp;<br />designed<br />by hand</>
+  )}
+</div>

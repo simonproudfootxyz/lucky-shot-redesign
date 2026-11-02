@@ -2,8 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ServiceGrid from '../components/ServiceGrid.astro';
 import ContactCTA from '../components/ContactCTA.astro';
-import PortfolioImage from '../components/PortfolioImage.astro';
-import { portfolioImages, aboutImage, portfolioThumbnail } from '../data/site';
+import Stamp from '../components/Stamp.astro';
+import { portfolioImages, portfolioThumbnail } from '../data/site';
 const thumbnails = {
   signs: portfolioThumbnail(portfolioImages.signs),
   chalkboards: portfolioThumbnail(portfolioImages.chalkboards),
@@ -29,8 +29,7 @@ const thumbnails = {
           <div class="caps location">Nelson, New Zealand · Available for projects near + far</div>
         </div>
         <div class="hero-image" style={`background-image: url('${portfolioImages.signs[0].src}')`}>
-          <!-- <PortfolioImage image={portfolioImages.murals[2]} loading="eager" fetchpriority="high" /> -->
-          <div class="stamp">Painted &amp;<br />designed<br />by hand</div>
+          <Stamp sun background={false} rotate />
         </div>
       </div>
     </div>

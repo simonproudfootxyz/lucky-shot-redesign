@@ -7,6 +7,7 @@
   min-height: 780px;
 }
 .photo {
+  position: relative;
   overflow: hidden;
 }
 .photo img {
